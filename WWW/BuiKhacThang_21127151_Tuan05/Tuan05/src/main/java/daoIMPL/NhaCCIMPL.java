@@ -3,6 +3,7 @@ package daoIMPL;
 import java.util.List;
 
 import dao.NhaCCDAO;
+
 import entities.NhaCungCap;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
@@ -17,8 +18,9 @@ public class NhaCCIMPL implements NhaCCDAO {
 	@Override
 	public List<NhaCungCap> findAll() {
 		// TODO Auto-generated method stub
-		String query = "Select * from nhacungcap";
-		return em.createNativeQuery(query).getResultList();
+		String query = "Select c from NhaCungCap c";
+		List<NhaCungCap> result = em.createQuery(query, NhaCungCap.class).getResultList();
+		return result;
 	}
 
 	@Override

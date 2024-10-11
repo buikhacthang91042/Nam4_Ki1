@@ -14,8 +14,7 @@ import jakarta.persistence.Table;
 public class DienThoai {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long madt;
+    private int madt;
 
     @Column(name = "tendt", nullable = false)
     private String tenDienThoai;
@@ -39,13 +38,9 @@ public class DienThoai {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public String toString() {
-		return "DienThoai [madt=" + madt + ", tenDienThoai=" + tenDienThoai + ", namSanXuat=" + namSanXuat
-				+ ", cauHinh=" + cauHinh + ", nhaCungCap=" + nhaCungCap + ", hinhAnh=" + hinhAnh + "]";
-	}
 
-	public DienThoai(Long madt, String tenDienThoai, Integer namSanXuat, String cauHinh, NhaCungCap nhaCungCap,
+
+	public DienThoai(int madt, String tenDienThoai, Integer namSanXuat, String cauHinh, NhaCungCap nhaCungCap,
 			String hinhAnh) {
 		super();
 		this.madt = madt;
@@ -56,11 +51,11 @@ public class DienThoai {
 		this.hinhAnh = hinhAnh;
 	}
 
-	public Long getMadt() {
+	public int getMadt() {
 		return madt;
 	}
 
-	public void setMadt(Long madt) {
+	public void setMadt(int madt) {
 		this.madt = madt;
 	}
 

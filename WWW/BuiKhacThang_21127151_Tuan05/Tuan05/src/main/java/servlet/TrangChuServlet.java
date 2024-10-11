@@ -47,44 +47,49 @@ public class TrangChuServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-	
-		NhaCungCap ncc0 = new NhaCungCap();
+		List<NhaCungCap> list = nhaCCDAO.findAll();
+		if (list.isEmpty()) {
+			NhaCungCap ncc0 = new NhaCungCap();
 
-		ncc0.setTenNhaCungCap("Nokia");
-		ncc0.setSoDienThoai("0123456789");
-		ncc0.setDiaChi("2A Hàng Bông");
-		nhaCCDAO.addNCC(ncc0);
+			ncc0.setTenNhaCungCap("Nokia");
+			ncc0.setSoDienThoai("0123456789");
+			ncc0.setDiaChi("2A Hàng Bông");
+			nhaCCDAO.addNCC(ncc0);
 
-		NhaCungCap ncc1 = new NhaCungCap();
+			NhaCungCap ncc1 = new NhaCungCap();
 
-		ncc1.setTenNhaCungCap("SamSung");
-		ncc1.setSoDienThoai("147896523");
-		ncc1.setDiaChi("8B Hàng Gánh");
-		nhaCCDAO.addNCC(ncc1);
+			ncc1.setTenNhaCungCap("SamSung");
+			ncc1.setSoDienThoai("147896523");
+			ncc1.setDiaChi("8B Hàng Gánh");
+			nhaCCDAO.addNCC(ncc1);
 
-		NhaCungCap ncc2 = new NhaCungCap();
+			NhaCungCap ncc2 = new NhaCungCap();
 
-		ncc2.setTenNhaCungCap("Xiaomi");
-		ncc2.setSoDienThoai("45786325778");
-		ncc2.setDiaChi("2A Hàng Nón");
-		nhaCCDAO.addNCC(ncc2);
+			ncc2.setTenNhaCungCap("Xiaomi");
+			ncc2.setSoDienThoai("45786325778");
+			ncc2.setDiaChi("2A Hàng Nón");
+			nhaCCDAO.addNCC(ncc2);
 
-		NhaCungCap ncc3 = new NhaCungCap();
+			NhaCungCap ncc3 = new NhaCungCap();
 
-		ncc3.setTenNhaCungCap("Lenovo");
-		ncc3.setSoDienThoai("147589355");
-		ncc3.setDiaChi("5A Hàng Mã");
-		nhaCCDAO.addNCC(ncc3);
+			ncc3.setTenNhaCungCap("Lenovo");
+			ncc3.setSoDienThoai("147589355");
+			ncc3.setDiaChi("5A Hàng Mã");
+			nhaCCDAO.addNCC(ncc3);
 
-		NhaCungCap ncc4 = new NhaCungCap();
+			NhaCungCap ncc4 = new NhaCungCap();
 
-		ncc4.setTenNhaCungCap("Iphone");
-		ncc4.setSoDienThoai("0123457859");
-		ncc4.setDiaChi("4A Hàng Bài");
-		nhaCCDAO.addNCC(ncc4);
+			ncc4.setTenNhaCungCap("Iphone");
+			ncc4.setSoDienThoai("0123457859");
+			ncc4.setDiaChi("4A Hàng Bài");
+			nhaCCDAO.addNCC(ncc4);
 
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/trangChu.jsp");
-		dispatcher.forward(request, response);
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/trangChu.jsp");
+			dispatcher.forward(request, response);
+		} else {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/trangChu.jsp");
+			dispatcher.forward(request, response);
+		}
 
 	}
 
