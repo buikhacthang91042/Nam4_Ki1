@@ -1,0 +1,5 @@
+package dao;
+
+public interface DienThoaiDAO {
+	public List<DienThoai> findAll();
+}

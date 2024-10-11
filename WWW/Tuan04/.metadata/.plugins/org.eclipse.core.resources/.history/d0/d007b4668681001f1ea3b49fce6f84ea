@@ -1,0 +1,15 @@
+package dao;
+
+import java.util.List;
+
+import model.CartItemBean;
+import model.Product;
+
+
+
+public interface CartBeanDAO {
+	public void addCartItem(Product product, int quantity);
+	public List<CartItemBean> getCartItems();
+	public void deleteCartItem(String strItemIndex);
+	public void upateCartItem(String srtItemIndex, String strQuantity);
+}

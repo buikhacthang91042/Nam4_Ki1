@@ -1,0 +1,2 @@
+C:\Nam4_HK1\ĐBCL&KTPM\BuiKhacThang_21127151\TestBai05\obj\Debug\TestBai05.csproj.AssemblyReference.cache
+C:\Nam4_HK1\ĐBCL&KTPM\BuiKhacThang_21127151\TestBai05\obj\Debug\TestBai05.csproj.CoreCompileInputs.cache

@@ -1,0 +1,13 @@
+package daoIMPL;
+
+import dao.NhaCCDAO;
+import jakarta.persistence.EntityManager;
+
+public class NhaCCIMPL implements NhaCCDAO {
+	private EntityManager em;
+
+	public NhaCCIMPL(EntityManager em) {
+		this.em=em;
+	}
+	
+}

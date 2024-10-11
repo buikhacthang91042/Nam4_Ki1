@@ -1,0 +1,7 @@
+s1,s2,s3,expected
+"Truong dh cong nghiep","dh","dai hoc","Truong dai hoc cong nghiep"
+"Truong dh cong nghiep","dh",,"Truong cong nghiep"
+"Truong dh cong nghiep","cn",,"Truong dh cong nghiep"
+" "," "," "," "
+"Truong dh cong nghiep","Truong","Dai","Dai dh cong nghiep"
+"Truong dh cong nghiep","nghiep","thuong","Truong dh cong thuong"

@@ -1,0 +1,7 @@
+package daoIMPL;
+
+import dao.DienThoaiDAO;
+
+public class DienThoaiDAOIMPL implements DienThoaiDAO {
+
+}

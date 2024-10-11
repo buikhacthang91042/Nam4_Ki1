@@ -1,0 +1,7 @@
+1726818070473	Rename resource 'Registration-Form.jsp'
+1726818145241	Move 'Registration.jsp' to 'webapp'
+1726832588527	Encapsulate field 'gender'
+1726880752609	Copy file
+1726881390473	Move 'DangNhap.jsp' to 'webapp'
+1726881404361	Move 'resource_en.properties' to 'resources'
+1726881407841	Move 'resource_vi.properties' to 'resources'

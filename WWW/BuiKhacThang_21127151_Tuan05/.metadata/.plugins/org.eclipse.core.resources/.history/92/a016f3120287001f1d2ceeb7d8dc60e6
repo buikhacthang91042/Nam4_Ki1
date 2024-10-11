@@ -1,0 +1,59 @@
+package servlet;
+
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.List;
+
+import dao.DienThoaiDAO;
+import dao.NhaCCDAO;
+import daoIMPL.DienThoaiDAOIMPL;
+import entities.DienThoai;
+import entities.NhaCungCap;
+
+/**
+ * Servlet implementation class DanhSachDienThoaiNCCServlet
+ */
+public class DanhSachDienThoaiNCCServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    private DienThoaiDAO dienThoaiDao;
+    private NhaCCDAO nhaCCDAO;
+    
+    private
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public DanhSachDienThoaiNCCServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		List<NhaCungCap> listNCC = null;
+		listNCC = nhaCCDAO.findAll();
+		request.setAttribute("NhaCCList", listNCC);
+		
+		List<DienThoai> listDT = null;
+		listDT = dienThoaiDao.findAll();
+		request.setAttribute("dienThoaiList", listDT);
+		
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/DanhSachDienThoaiNCC.jsp")
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>BaiTapTuan01</display-name>
+  <welcome-file-list>
+  	
+    <welcome-file>bai5.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>Servlet_Tuan01</display-name>
+    <servlet-name>Servlet_Tuan01</servlet-name>
+    <servlet-class>iuh.servlet.Servlet_Tuan01</servlet-class>
+    
+     <init-param>
+        <param-name>Tên đăng nhập</param-name>
+        <param-value>admin</param-value>
+    </init-param>
+    
+    <init-param>
+    	<param-name>Mật khẩu</param-name>
+    	<param-value>matkhauadmin</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet_Tuan01</servlet-name>
+    <url-pattern>/servlet_Tuan01</url-pattern>
+  </servlet-mapping>
+  <context-param>
+  	<param-name>Họ tên</param-name>
+  	<param-value>Thắng</param-value>
+  </context-param>
+  
+</web-app>

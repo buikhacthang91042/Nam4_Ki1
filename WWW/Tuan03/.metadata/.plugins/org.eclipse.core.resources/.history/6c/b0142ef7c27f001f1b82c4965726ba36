@@ -1,0 +1,41 @@
+package model;
+
+public class CartItemBean {
+	private String strPartNumber;
+	private String strModelDesciption;
+	private double dbUnitCost;
+	private int iQuantity;
+	private double dblTotalCost;
+	public String getStrPartNumber() {
+		return strPartNumber;
+	}
+	public void setStrPartNumber(String strPartNumber) {
+		this.strPartNumber = strPartNumber;
+	}
+	public String getStrModelDesciption() {
+		return strModelDesciption;
+	}
+	public void setStrModelDesciption(String strModelDesciption) {
+		this.strModelDesciption = strModelDesciption;
+	}
+	public double getDbUnitCost() {
+		return dbUnitCost;
+	}
+	public void setDbUnitCost(double dbUnitCost) {
+		this.dbUnitCost = dbUnitCost;
+	}
+	public int getiQuantity() {
+		return iQuantity;
+	}
+	public void setiQuantity(int iQuantity) {
+		this.iQuantity = iQuantity;
+	}
+	public double getDblTotalCost() {
+		return dblTotalCost;
+	}
+	public void setDblTotalCost(double dblTotalCost) {
+		this.dblTotalCost = dblTotalCost;
+	}
+	
+	
+}

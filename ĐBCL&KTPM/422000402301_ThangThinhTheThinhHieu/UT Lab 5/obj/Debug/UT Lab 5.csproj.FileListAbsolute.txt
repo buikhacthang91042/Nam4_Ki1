@@ -1,0 +1,18 @@
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\DataError_UTLab5.csv
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\Data_UTLab5.csv
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\UT Lab 5.dll
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\UT Lab 5.pdb
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\MethodLibrary.dll
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\obj\Debug\UT Lab 5.csproj.AssemblyReference.cache
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\obj\Debug\UT Lab 5.csproj.CoreCompileInputs.cache
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\obj\Debug\UT Lab 5.csproj.Up2Date
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\obj\Debug\UT Lab 5.dll
+C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 5\obj\Debug\UT Lab 5.pdb

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="model.CartItemBean"/>
+    <fullyQualifiedTypeName name="dao.CartBeanDAO"/>
+    <fullyQualifiedTypeName name="daoImplement.CartBeanDAOIMPL"/>
+    <fullyQualifiedTypeName name="daoImplement.ProductDAOIMPL"/>
+    <fullyQualifiedTypeName name="dao.ProductDAO"/>
+    <fullyQualifiedTypeName name="model.Product"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.OneToMany"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.FetchType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="jakarta.validation.Validator"/>
+    <fullyQualifiedTypeName name="jakarta.validation.Validation"/>
+    <fullyQualifiedTypeName name="jakarta.validation.ValidatorFactory"/>
+    <fullyQualifiedTypeName name="jakarta.validation.ConstraintViolation"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="utils.EntityManagerFactoryUtil"/>
+    <fullyQualifiedTypeName name="entities.TinTuc"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.EntityTransaction"/>
+    <fullyQualifiedTypeName name="entities.DanhMuc"/>
+    <fullyQualifiedTypeName name="dao.DanhMucDAO"/>
+    <fullyQualifiedTypeName name="dao.TinTucDAO"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="daoImplement.DanhMucDAOIMPL"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="daoImplement.DanhSachTinTucQuanLy"/>
+</qualifiedTypeNameHistroy>

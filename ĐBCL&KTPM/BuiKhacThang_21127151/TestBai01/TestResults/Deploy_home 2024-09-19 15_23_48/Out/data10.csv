@@ -1,0 +1,7 @@
+s,n,p,expected
+"buikhacthang",3,2,"bhacthang"
+"buikhacthang",8,5,"buik"
+"buikhacthang123456",1,14,"buikhacthang13456"
+"buikhacthang",0,0,"buikhacthang"
+"buikhacthang",3,10,"buikhacth"
+"buikhacthang",0,12,"buikhacthang"

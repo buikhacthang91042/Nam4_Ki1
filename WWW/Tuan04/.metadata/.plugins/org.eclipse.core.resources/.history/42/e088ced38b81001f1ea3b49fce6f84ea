@@ -1,0 +1,116 @@
+package servlet;
+
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletException;
+
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+import model.CartBean;
+import model.Product;
+import utils.EntityManagerFactoryUtil;
+
+import java.io.IOException;
+
+import dao.CartBeanDAO;
+import daoImplement.CartBeanDAOIMPL;
+
+
+
+
+/**
+ * Servlet implementation class CartController
+ */
+public class CartController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private EntityManagerFactoryUtil entityManageFactory;
+	private CartBeanDAO dao; 
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public CartController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	@Override
+	public void init(ServletConfig config) throws ServletException {
+		// TODO Auto-generated method stub
+		super.init(config);
+		this.entityManageFactory = new EntityManagerFactoryUtil();
+		this.dao = new CartBeanDAOIMPL(this.entityManageFactory.getEnManager());
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		String strAction = request.getParameter("action");
+		if(strAction != null && !strAction.equals("")) {
+			if(strAction.equals("add")){
+				addToCart(request);
+			}else if(strAction.equals("Update")) {
+				updateCart(request);
+			}else if(strAction.equals("Delete")) {
+				deleteCart(request);
+			}
+		}
+		response.sendRedirect("/Tuan04_Bai2/ShoppingCart.jsp");
+	}
+	protected void deleteCart(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		String strItemIndex = request.getParameter("itemIndex");
+        try {
+            dao.deleteCartItem(strItemIndex);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+	}
+	protected void updateCart(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		String strQuantity = request.getParameter("quantity");
+        String strItemIndex = request.getParameter("itemIndex");
+        try {
+            dao.upateCartItem(strItemIndex, strQuantity);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+	}
+	protected void addToCart(HttpServletRequest request) {
+		HttpSession session = request.getSession();
+		
+	CartBean cartBean = null;
+	String strModelNo = request.getParameter("modelNo");
+    String strDescription = request.getParameter("description");
+    String strPrice = request.getParameter("price");
+    String strQuantity = request.getParameter("quantity");
+    Object objCartBean = session.getAttribute("cart");
+    if(objCartBean != null) {
+		cartBean = (CartBean) objCartBean;
+	}else {
+		cartBean = new CartBean();
+		session.setAttribute("cart", cartBean);
+	}
+    try {
+        // Tạo đối tượng Product để thêm vào giỏ hàng
+        Product product = new Product();
+        product.setId(strModelNo);
+        product.setModel(strDescription);
+        product.setPrice(Double.parseDouble(strPrice));
+        dao.addCartItem(product, Integer.parseInt(strQuantity));
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+	}
+}
+

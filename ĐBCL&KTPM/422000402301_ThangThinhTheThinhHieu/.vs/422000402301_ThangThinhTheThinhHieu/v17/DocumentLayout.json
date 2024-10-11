@@ -1,0 +1,279 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA400C7D-45EB-40C2-A910-787F0D74776E}|UT Lab 4\\UT Lab 4.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 4\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA400C7D-45EB-40C2-A910-787F0D74776E}|UT Lab 4\\UT Lab 4.csproj|solutionrelative:ut lab 4\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA400C7D-45EB-40C2-A910-787F0D74776E}|UT Lab 4\\UT Lab 4.csproj|c:\\nam4_hk1\\\u0111bcl\u0026ktpm\\422000402301_thangthinhthethinhhieu\\ut lab 4\\data_utlab4.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BA400C7D-45EB-40C2-A910-787F0D74776E}|UT Lab 4\\UT Lab 4.csproj|solutionrelative:ut lab 4\\data_utlab4.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2B2FC1-00A3-44B6-A4C4-81CA20258032}|UT Lab 5\\UT Lab 5.csproj|c:\\nam4_hk1\\\u0111bcl\u0026ktpm\\422000402301_thangthinhthethinhhieu\\ut lab 5\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC2B2FC1-00A3-44B6-A4C4-81CA20258032}|UT Lab 5\\UT Lab 5.csproj|solutionrelative:ut lab 5\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2B2FC1-00A3-44B6-A4C4-81CA20258032}|UT Lab 5\\UT Lab 5.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 5\\data_utlab5.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DC2B2FC1-00A3-44B6-A4C4-81CA20258032}|UT Lab 5\\UT Lab 5.csproj|solutionrelative:ut lab 5\\data_utlab5.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC2B2FC1-00A3-44B6-A4C4-81CA20258032}|UT Lab 5\\UT Lab 5.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 5\\dataerror_utlab5.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DC2B2FC1-00A3-44B6-A4C4-81CA20258032}|UT Lab 5\\UT Lab 5.csproj|solutionrelative:ut lab 5\\dataerror_utlab5.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2919B6E0-392C-4297-986B-964C1007C6D8}|UT Lab 7\\UT Lab 7.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 7\\dataerror_utlab7.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2919B6E0-392C-4297-986B-964C1007C6D8}|UT Lab 7\\UT Lab 7.csproj|solutionrelative:ut lab 7\\dataerror_utlab7.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2919B6E0-392C-4297-986B-964C1007C6D8}|UT Lab 7\\UT Lab 7.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 7\\data_utlab7.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2919B6E0-392C-4297-986B-964C1007C6D8}|UT Lab 7\\UT Lab 7.csproj|solutionrelative:ut lab 7\\data_utlab7.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2919B6E0-392C-4297-986B-964C1007C6D8}|UT Lab 7\\UT Lab 7.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 7\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2919B6E0-392C-4297-986B-964C1007C6D8}|UT Lab 7\\UT Lab 7.csproj|solutionrelative:ut lab 7\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F36FDD9-D6CC-46F8-884E-E5057D8925AB}|UT Lab 6\\UT Lab 6.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 6\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F36FDD9-D6CC-46F8-884E-E5057D8925AB}|UT Lab 6\\UT Lab 6.csproj|solutionrelative:ut lab 6\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F36FDD9-D6CC-46F8-884E-E5057D8925AB}|UT Lab 6\\UT Lab 6.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 6\\data_utlab6.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6F36FDD9-D6CC-46F8-884E-E5057D8925AB}|UT Lab 6\\UT Lab 6.csproj|solutionrelative:ut lab 6\\data_utlab6.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98B301E-A960-4FCB-8701-1C86454E1ABC}|UT Lab 8\\UT Lab 8.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 8\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F98B301E-A960-4FCB-8701-1C86454E1ABC}|UT Lab 8\\UT Lab 8.csproj|solutionrelative:ut lab 8\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F98B301E-A960-4FCB-8701-1C86454E1ABC}|UT Lab 8\\UT Lab 8.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 8\\data_utlab8.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F98B301E-A960-4FCB-8701-1C86454E1ABC}|UT Lab 8\\UT Lab 8.csproj|solutionrelative:ut lab 8\\data_utlab8.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F36FDD9-D6CC-46F8-884E-E5057D8925AB}|UT Lab 6\\UT Lab 6.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 6\\dataerror_utlab6.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6F36FDD9-D6CC-46F8-884E-E5057D8925AB}|UT Lab 6\\UT Lab 6.csproj|solutionrelative:ut lab 6\\dataerror_utlab6.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E67E577-3D78-482C-8B16-6F069420146A}|UT Lab 1\\UT Lab 1.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E67E577-3D78-482C-8B16-6F069420146A}|UT Lab 1\\UT Lab 1.csproj|solutionrelative:ut lab 1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E67E577-3D78-482C-8B16-6F069420146A}|UT Lab 1\\UT Lab 1.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 1\\dataerror_utlab1.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2E67E577-3D78-482C-8B16-6F069420146A}|UT Lab 1\\UT Lab 1.csproj|solutionrelative:ut lab 1\\dataerror_utlab1.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E67E577-3D78-482C-8B16-6F069420146A}|UT Lab 1\\UT Lab 1.csproj|C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\ut lab 1\\data_utlab1.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{2E67E577-3D78-482C-8B16-6F069420146A}|UT Lab 1\\UT Lab 1.csproj|solutionrelative:ut lab 1\\data_utlab1.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Data_UTLab4.csv",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 4\\Data_UTLab4.csv",
+              "RelativeDocumentMoniker": "UT Lab 4\\Data_UTLab4.csv",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 4\\Data_UTLab4.csv",
+              "RelativeToolTip": "UT Lab 4\\Data_UTLab4.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-02T06:49:13.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataError_UTLab5.csv",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 5\\DataError_UTLab5.csv",
+              "RelativeDocumentMoniker": "UT Lab 5\\DataError_UTLab5.csv",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 5\\DataError_UTLab5.csv",
+              "RelativeToolTip": "UT Lab 5\\DataError_UTLab5.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-02T00:19:08.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Data_UTLab5.csv",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 5\\Data_UTLab5.csv",
+              "RelativeDocumentMoniker": "UT Lab 5\\Data_UTLab5.csv",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 5\\Data_UTLab5.csv",
+              "RelativeToolTip": "UT Lab 5\\Data_UTLab5.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-02T00:18:37.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 5\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UT Lab 5\\UnitTest1.cs",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 5\\UnitTest1.cs",
+              "RelativeToolTip": "UT Lab 5\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T00:17:52.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DataError_UTLab7.csv",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 7\\DataError_UTLab7.csv",
+              "RelativeDocumentMoniker": "UT Lab 7\\DataError_UTLab7.csv",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 7\\DataError_UTLab7.csv",
+              "RelativeToolTip": "UT Lab 7\\DataError_UTLab7.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-01T14:27:35.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Data_UTLab7.csv",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 7\\Data_UTLab7.csv",
+              "RelativeDocumentMoniker": "UT Lab 7\\Data_UTLab7.csv",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 7\\Data_UTLab7.csv",
+              "RelativeToolTip": "UT Lab 7\\Data_UTLab7.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-01T14:27:15.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 7\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UT Lab 7\\UnitTest1.cs",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 7\\UnitTest1.cs",
+              "RelativeToolTip": "UT Lab 7\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:26:48.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 4\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UT Lab 4\\UnitTest1.cs",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 4\\UnitTest1.cs",
+              "RelativeToolTip": "UT Lab 4\\UnitTest1.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:32:50.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Data_UTLab6.csv",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 6\\Data_UTLab6.csv",
+              "RelativeDocumentMoniker": "UT Lab 6\\Data_UTLab6.csv",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 6\\Data_UTLab6.csv",
+              "RelativeToolTip": "UT Lab 6\\Data_UTLab6.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-01T14:06:19.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 6\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UT Lab 6\\UnitTest1.cs",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 6\\UnitTest1.cs",
+              "RelativeToolTip": "UT Lab 6\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T14:05:41.978Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Data_UTLab8.csv",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 8\\Data_UTLab8.csv",
+              "RelativeDocumentMoniker": "UT Lab 8\\Data_UTLab8.csv",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 8\\Data_UTLab8.csv",
+              "RelativeToolTip": "UT Lab 8\\Data_UTLab8.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-01T13:40:41.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 8\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UT Lab 8\\UnitTest1.cs",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 8\\UnitTest1.cs",
+              "RelativeToolTip": "UT Lab 8\\UnitTest1.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwAgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:39:42.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DataError_UTLab6.csv",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 6\\DataError_UTLab6.csv",
+              "RelativeDocumentMoniker": "UT Lab 6\\DataError_UTLab6.csv",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 6\\DataError_UTLab6.csv",
+              "RelativeToolTip": "UT Lab 6\\DataError_UTLab6.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-01T14:06:41.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DataError_UTLab1.csv",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 1\\DataError_UTLab1.csv",
+              "RelativeDocumentMoniker": "UT Lab 1\\DataError_UTLab1.csv",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 1\\DataError_UTLab1.csv",
+              "RelativeToolTip": "UT Lab 1\\DataError_UTLab1.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-01T13:30:49.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Data_UTLab1.csv",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 1\\Data_UTLab1.csv",
+              "RelativeDocumentMoniker": "UT Lab 1\\Data_UTLab1.csv",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 1\\Data_UTLab1.csv",
+              "RelativeToolTip": "UT Lab 1\\Data_UTLab1.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-10-01T13:30:32.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 1\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "UT Lab 1\\UnitTest1.cs",
+              "ToolTip": "C:\\Nam4_HK1\\\u0110BCL\u0026KTPM\\422000402301_ThangThinhTheThinhHieu\\UT Lab 1\\UnitTest1.cs",
+              "RelativeToolTip": "UT Lab 1\\UnitTest1.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwB4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T13:30:03.949Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

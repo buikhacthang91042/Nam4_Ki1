@@ -1,0 +1,23 @@
+package daoIMPL;
+
+import java.util.List;
+
+import dao.NhaCCDAO;
+import entities.NhaCungCap;
+import jakarta.persistence.EntityManager;
+
+public class NhaCCIMPL implements NhaCCDAO {
+	private EntityManager em;
+
+	public NhaCCIMPL(EntityManager em) {
+		this.em=em;
+	}
+
+	@Override
+	public List<NhaCungCap> findAll() {
+		// TODO Auto-generated method stub
+		String query = "Select * from nhacungcap";
+		return em.createNativeQuery(query).getResultList();
+	}
+	
+}

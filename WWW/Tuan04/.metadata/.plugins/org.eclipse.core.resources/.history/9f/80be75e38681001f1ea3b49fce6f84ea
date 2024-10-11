@@ -1,0 +1,16 @@
+package daoImplement;
+
+import java.util.List;
+
+import dao.CartBeanDAO;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityTransaction;
+
+public class CartBeanDAOIMPL implements CartBeanDAO{
+	private EntityManager entityManager;
+	public CartBeanDAOIMPL(EntityManager entityManager) {
+		this.entityManager = entityManager;
+	}
+
+	
+}

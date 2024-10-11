@@ -1,0 +1,9 @@
+a,b,c,expected
+0,0,0,Vô số nghiệm
+0,0,2,Vô nghiệm
+2,4,10,Vô nghiệm
+0,2,-4,Có 1 nghiệm
+1,5,1,Có 2 nghiệm phân biệt
+1,0,-4,Có 2 nghiệm phân biệt
+1,4,4,Có nghiệm kép
+1,0,0,Có nghiệm kép

@@ -1,0 +1,121 @@
+package servlet;
+
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.Persistence;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
+import jakarta.validation.ValidatorFactory;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Set;
+
+import daoImplement.DanhMucDAOIMPL;
+import daoImplement.DanhSachTinTucQuanLy;
+import entities.DanhMuc;
+import entities.TinTuc;
+
+/**
+ * Servlet implementation class TinTucFormServlet
+ */
+public class TinTucFormServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private EntityManagerFactory emf;
+    private Validator validator;   
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public TinTucFormServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+    
+    @Override
+    public void init() throws ServletException {
+        emf = Persistence.createEntityManagerFactory("tintuc");
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        validator = factory.getValidator();
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+    
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		EntityManager em = emf.createEntityManager();
+	    
+	    // Lấy danh sách danh mục
+	    DanhMucDAOIMPL danhMucDAO = new DanhMucDAOIMPL(em);
+	    List<DanhMuc> danhMucList = danhMucDAO.layTatCaDanhMuc();
+	    
+	    // Đặt danh sách danh mục vào request
+	    request.setAttribute("danhMucList", danhMucList);
+	    request.getRequestDispatcher("/TinTucForm.jsp").forward(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String maTTStr = request.getParameter("maTT");
+        String tieuDe = request.getParameter("tieuDe");
+        String noiDung = request.getParameter("noiDung");
+        String lienKet = request.getParameter("lienKet");
+        String danhMucStr = request.getParameter("danhMuc");
+
+        int maTT = Integer.parseInt(maTTStr);
+        int maDM = Integer.parseInt(danhMucStr);
+
+        // Tạo đối tượng TinTuc
+        TinTuc tinTuc = new TinTuc();
+        tinTuc.setMaTT(maTT);
+        tinTuc.setTieuDe(tieuDe);
+        tinTuc.setNoiDung(noiDung);
+        tinTuc.setLienKet(lienKet);
+
+        // Gán danh mục cho tin tức
+        EntityManager em = emf.createEntityManager();
+        DanhMuc danhMuc = em.find(DanhMuc.class, maDM);
+        tinTuc.setDanhMuc(danhMuc);
+
+        // Kiểm tra dữ liệu với Hibernate Validator
+        Set<ConstraintViolation<TinTuc>> violations = validator.validate(tinTuc);
+
+        if (!violations.isEmpty()) {
+            StringBuilder errorMessage = new StringBuilder("Dữ liệu nhập không hợp lệ:<br>");
+            for (ConstraintViolation<TinTuc> violation : violations) {
+                errorMessage.append(violation.getMessage()).append("<br>");
+            }
+
+            // Hiển thị lỗi trên form
+            request.setAttribute("errorMessage", errorMessage.toString());
+            request.getRequestDispatcher("/TinTucForm.jsp").forward(request, response);
+            return;
+        }
+
+        // Thêm tin tức vào cơ sở dữ liệu nếu không có lỗi
+        DanhSachTinTucQuanLy tinTucDao = new DanhSachTinTucQuanLy(em);
+        tinTucDao.themTinTuc(tinTuc);
+        tinTucDao.close();
+
+        // Chuyển hướng đến trang kết quả
+        request.setAttribute("tinTuc", tinTuc);
+        request.getRequestDispatcher("/DanhSachTinTuc.jsp").forward(request, response);
+    }
+
+    @Override
+    public void destroy() {
+        if (emf != null) {
+            emf.close();
+        }
+    }
+
+}

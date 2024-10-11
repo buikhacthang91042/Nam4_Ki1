@@ -1,0 +1,17 @@
+INDEX VERSION 1.134
+C:\Nam4_HK1\WWW\Tuan03\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3654882647.index
+\Tuan03_Bai01\src\main\java
+C:\Nam4_HK1\WWW\Tuan03\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3457521287.index
+\Tuan03_Bai02\src\main\java
+C:\Nam4_HK1\WWW\Tuan03\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2319666899.index
+\Tuan03_Bai02\src\main\java
+C:\Nam4_HK1\WWW\Tuan03\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3657788508.index
+\Tuan03\src\main\java
+C:\Nam4_HK1\WWW\Tuan03\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\759402856.index
+\Tuan03\src\main\java
+C:\Nam4_HK1\WWW\Tuan03\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\233145744.index
+\Tuan03_Bai03\src\main\java
+C:\Nam4_HK1\WWW\Tuan03\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3110805235.index
+\Tuan03_Bai02\src\main\java
+C:\Nam4_HK1\WWW\Tuan03\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\762837467.index
+\Tuan03_Bai04\src\main\java

@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+C:\Nam4_HK1\WWW\Tuan04\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2326232642.index
+2649824970.index
+3942002268.index
+83382128.index
+2386125877.index
+892702467.index
+399043252.index
+3818842407.index
+2197854976.index

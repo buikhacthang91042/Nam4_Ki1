@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll App</title>
+</head>
+<body>
+    <button class="poll-answer">Answer poll</button>
+
+    <script>
+        const poll = {
+            question: "Ngôn ngữ yêu thích của bạn là gì?",
+            options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"],
+            answers: new Array(4).fill(0),
+
+            registerNewAnswer() {
+                const answer = Number(
+                    prompt(`${this.question}\n${this.options.join("\n")}`)
+                );
+                if (typeof answer === "number" && answer >= 0 && answer < this.answers.length) {
+                    this.answers[answer]++;
+                } else {
+                    alert("Chọn số không hợp lệ");
+                }
+                this.displayResults("string");
+            },
+
+            displayResults(type = "array") {
+                if (type == "string") {
+                    console.log(`Kết quả thăm dò là: ${this.answers.join(", ")}`);
+                } else {
+                    console.log(this.answers);
+                }
+            },
+        };
+
+        document.querySelector('.poll-answer').addEventListener("click", poll.registerNewAnswer.bind(poll));
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+package daoIMPL;
+
+import java.util.List;
+
+import dao.DienThoaiDAO;
+import entities.DienThoai;
+import jakarta.persistence.EntityManager;
+import jakarta.transaction.Transaction;
+
+public class DienThoaiDAOIMPL implements DienThoaiDAO {
+	private EntityManager em;
+	
+	public DienThoaiDAOIMPL(EntityManager em) {
+		this.em=em;
+	}
+
+	@Override
+	public List<DienThoai> findAll() {
+		Transaction trans = em.getTransaction();
+		return null;
+	}
+	
+}
