@@ -1,5 +1,3 @@
 INDEX VERSION 1.134
-D:\Nam4\WWW\BuiKhacThang_21127151_Tuan05\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2386125877.index
-\Tuan04_Bai3\src\main\java
-D:\Nam4\WWW\BuiKhacThang_21127151_Tuan05\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2323064416.index
+C:\Nam4_HK1\WWW\BuiKhacThang_21127151_Tuan05\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2323064416.index
 \Tuan05\src\main\java
