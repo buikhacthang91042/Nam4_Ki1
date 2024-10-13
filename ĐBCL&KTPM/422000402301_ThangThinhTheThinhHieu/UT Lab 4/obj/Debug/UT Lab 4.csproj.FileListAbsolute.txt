@@ -16,3 +16,21 @@ C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\obj\Debug\UT
 C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\obj\Debug\UT Lab 4.pdb
 C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\Data_UTLab4.csv
 C:\Nam4_HK1\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\DataError_UTLab4.csv
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\DataError_UTLab4.csv
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\Data_UTLab4.csv
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\UT Lab 4.dll
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\UT Lab 4.pdb
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\MethodLibrary.dll
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\obj\Debug\UT Lab 4.csproj.AssemblyReference.cache
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\obj\Debug\UT Lab 4.csproj.CoreCompileInputs.cache
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\obj\Debug\UT Lab 4.csproj.Up2Date
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\obj\Debug\UT Lab 4.dll
+D:\Nam4\ĐBCL&KTPM\422000402301_ThangThinhTheThinhHieu\UT Lab 4\obj\Debug\UT Lab 4.pdb
