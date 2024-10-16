@@ -1,0 +1,6 @@
+firstRadius,secRadius,distance,expected_result
+5,5,0,0
+4,5,0,1
+6,5,0,2
+5,5,0,3
+5,5,1,3

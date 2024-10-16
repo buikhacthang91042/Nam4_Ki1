@@ -1,0 +1,6 @@
+email,expected_result
+thang@gmailcom,false
+thang..@gmail.com,false
+thanggmail.com,false
+thang.@gmail.com,false
+thang@gmail.com,true

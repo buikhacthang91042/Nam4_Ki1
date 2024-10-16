@@ -1,0 +1,6 @@
+w,h,ww,wh,expected_result
+3,4,10,10,x: 3.5, y: 3
+5,6,10,12,x: 2.5, y: 3
+0,4,10,10,Error
+3,-1,10,10,Error
+5,6,0,12,Error

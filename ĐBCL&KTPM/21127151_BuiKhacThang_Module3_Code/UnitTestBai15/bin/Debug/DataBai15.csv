@@ -1,0 +1,6 @@
+year,expected_result
+999,false
+2000,true
+2100,false
+2008,true
+1001,false

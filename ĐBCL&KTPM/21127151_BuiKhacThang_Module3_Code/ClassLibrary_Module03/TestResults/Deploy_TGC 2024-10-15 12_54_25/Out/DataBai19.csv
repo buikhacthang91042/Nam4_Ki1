@@ -1,0 +1,5 @@
+height,weight,expected_result
+0,0,-1
+160,45,2
+170,80,1
+175,70,0

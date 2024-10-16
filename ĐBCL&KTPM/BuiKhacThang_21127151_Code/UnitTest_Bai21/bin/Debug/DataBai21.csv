@@ -1,0 +1,7 @@
+hexaString, expected_result
+123,291
+a3b,2619
+ABC,2748
+aBc,2748
+G12,18
+,0

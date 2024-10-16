@@ -1,0 +1,6 @@
+D:\Nam4\ĐBCL&KTPM\BuiKhacThang_21127151_Code\ClassLibrary_Module03\bin\Debug\ClassLibrary_Module03.dll
+D:\Nam4\ĐBCL&KTPM\BuiKhacThang_21127151_Code\ClassLibrary_Module03\bin\Debug\ClassLibrary_Module03.pdb
+D:\Nam4\ĐBCL&KTPM\BuiKhacThang_21127151_Code\ClassLibrary_Module03\obj\Debug\ClassLibrary_Module03.csproj.AssemblyReference.cache
+D:\Nam4\ĐBCL&KTPM\BuiKhacThang_21127151_Code\ClassLibrary_Module03\obj\Debug\ClassLibrary_Module03.csproj.CoreCompileInputs.cache
+D:\Nam4\ĐBCL&KTPM\BuiKhacThang_21127151_Code\ClassLibrary_Module03\obj\Debug\ClassLibrary_Module03.dll
+D:\Nam4\ĐBCL&KTPM\BuiKhacThang_21127151_Code\ClassLibrary_Module03\obj\Debug\ClassLibrary_Module03.pdb

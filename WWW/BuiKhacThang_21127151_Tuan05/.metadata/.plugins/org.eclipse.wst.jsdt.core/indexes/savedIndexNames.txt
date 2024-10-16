@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.4+D:\Nam4\WWW\BuiKhacThang_21127151_Tuan05\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 2540548456.index
 590142699.index
@@ -5,3 +6,12 @@ INDEX VERSION 1.4+D:\Nam4\WWW\BuiKhacThang_21127151_Tuan05\.metadata\.plugins\or
 2534604159.index
 1915282412.index
 3566343115.index
+=======
+INDEX VERSION 1.4+C:\Nam4_HK1\WWW\BuiKhacThang_21127151_Tuan05\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2534604159.index
+2211467372.index
+2876278357.index
+991722130.index
+2157071123.index
+3317387295.index
+>>>>>>> 0de495aab0c4eff2b0da2f59217a47ac400982cb

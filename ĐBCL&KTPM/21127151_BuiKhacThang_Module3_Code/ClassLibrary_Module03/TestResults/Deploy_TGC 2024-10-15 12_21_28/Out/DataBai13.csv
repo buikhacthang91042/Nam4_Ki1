@@ -1,0 +1,5 @@
+x1,y1,x2,y2,x,y,expected_result
+2,2,1,1,1,"Error"
+1,2,2,2,0,1,"False"
+1,1,2,1,1,0,"False"
+1,1,2,2,1,2,"True"

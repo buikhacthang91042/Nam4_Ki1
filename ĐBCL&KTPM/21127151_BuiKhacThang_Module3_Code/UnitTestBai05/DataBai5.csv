@@ -1,0 +1,5 @@
+a,b,c,expected_result
+3,4,5,Triangle is Scalene
+5,5,3,Triangle is Isosceles
+4,4,4,Triangle is Equilateral
+1,2,3,Not a Triangle
