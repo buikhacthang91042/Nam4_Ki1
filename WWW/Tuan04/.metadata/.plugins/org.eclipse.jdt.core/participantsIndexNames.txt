@@ -1,11 +1,7 @@
 INDEX VERSION 1.134
-C:\Nam4_HK1\WWW\Tuan04\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\161460086.index
-\Tuan04_Bai2\src\main\java
-C:\Nam4_HK1\WWW\Tuan04\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\762837467.index
-\Tuan03_Bai04\src\main\java
-C:\Nam4_HK1\WWW\Tuan04\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2386125877.index
+D:\Nam4\WWW\Tuan04\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2386125877.index
 \Tuan04_Bai3\src\main\java
-C:\Nam4_HK1\WWW\Tuan04\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1510339826.index
+D:\Nam4\WWW\Tuan04\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1510339826.index
 \Tuan04_Bai1\src\main\java
-C:\Nam4_HK1\WWW\Tuan04\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4263377764.index
-\Tuan04_Bai1\src\main\java
+D:\Nam4\WWW\Tuan04\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\161460086.index
+\Tuan04_Bai2\src\main\java
