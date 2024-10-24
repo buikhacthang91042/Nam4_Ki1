@@ -18,7 +18,7 @@
 	<h1>Thêm nhân viên mới</h1>
 	<div class="dienThongTin">
 	<label>Mã nhân viên</label>
-	<input type="text" name="maNhanVien">
+	<input type="text" name="maNhanVien" >
 	<br>
 	</div>
 	<div class="dienThongTin">

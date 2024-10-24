@@ -9,10 +9,16 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Constraint;
+import jakarta.validation.ConstraintViolation;
+import jakarta.validation.Validation;
+import jakarta.validation.Validator;
+import jakarta.validation.ValidatorFactory;
 import utils.EntityManagerFactoryUtil;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Set;
 
 import dao.NhanVienDAO;
 import dao.PhongBanDAO;
@@ -27,11 +33,13 @@ import enitties.PhongBan;
 @WebServlet("/ThemNhanVienMoiServlet")
 public class ThemNhanVienMoiServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-    private EntityManagerFactoryUtil emuf;
-    private EntityManagerFactory emf;
-    private NhanVienDAO nhanvienDAO;
-    private PhongBanDAO phongBanDAO;
-    @Override
+	private EntityManagerFactoryUtil emuf;
+	private EntityManagerFactory emf;
+	private NhanVienDAO nhanvienDAO;
+	private PhongBanDAO phongBanDAO;
+	private Validator validator;
+
+	@Override
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
 		super.init(config);
@@ -39,31 +47,37 @@ public class ThemNhanVienMoiServlet extends HttpServlet {
 		this.emf = Persistence.createEntityManagerFactory("ontap");
 		this.nhanvienDAO = new NhanVienDAOImpl(emuf.getEm());
 		this.phongBanDAO = new PhongBanDAOImpl(emuf.getEm());
+		ValidatorFactory vf = Validation.buildDefaultValidatorFactory();
+		validator = vf.getValidator();
 	}
 
 	/**
-     * @see HttpServlet#HttpServlet()
-     */
-    public ThemNhanVienMoiServlet() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
+	 * @see HttpServlet#HttpServlet()
+	 */
+	public ThemNhanVienMoiServlet() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		List<PhongBan> listPB =  phongBanDAO.findAll();
+		List<PhongBan> listPB = phongBanDAO.findAll();
 		request.setAttribute("listPhongBan", listPB);
 		request.getRequestDispatcher("/ThemNhanVienMoi.jsp").forward(request, response);
-		
+
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		String maNhanVien = request.getParameter("maNhanVien");
 		String tenNhanVien = request.getParameter("tenNhanVien");
@@ -81,9 +95,17 @@ public class ThemNhanVienMoiServlet extends HttpServlet {
 		EntityManager em = emf.createEntityManager();
 		PhongBan pb = em.find(PhongBan.class, phongBan);
 		nv.setPhongBan(pb);
-		nhanvienDAO.themNhanVienMoi(nv);
-		request.getRequestDispatcher("QuanLyNhanVienServlet").forward(request, response);
-		
+
+		Set<ConstraintViolation<NhanVien>> dsLoi = validator.validate(nv);
+		if (!dsLoi.isEmpty()) {
+			for (ConstraintViolation<NhanVien> constraintViolation : dsLoi) {
+				StringBuilder loi = constraintViolation.getMessage();
+			}
+		} else {
+			nhanvienDAO.themNhanVienMoi(nv);
+			request.getRequestDispatcher("QuanLyNhanVienServlet").forward(request, response);
+		}
+
 	}
 
 }

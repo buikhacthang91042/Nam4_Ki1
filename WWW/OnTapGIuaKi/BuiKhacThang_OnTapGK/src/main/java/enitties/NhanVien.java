@@ -7,15 +7,25 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 
 @Entity
 public class NhanVien {
 	@Id
+	@NotEmpty(message = "Mã nhân viên không được để trống")
 	private String maNhanVien;
 	
+	@NotEmpty(message = "Tên nhân viên không được để trống")
+	@Size(max = 50 ,message = "Không được nhập quá 50 kí tự")
 	private String tenNhanVien;
+	@NotEmpty(message = "Tuổi nhân viên không được để trống")
 	private int tuoi;
+	@NotEmpty(message = "Số điện thoại nhân viên không được để trống")
 	private String sDT;
+	@NotEmpty(message = "Địa chỉ nhân viên không được để trống")
+	@Pattern(regexp = "^[a-zA-Z0-9!#$&-+.]+@(gmail.com| yahoo.com| outlook.com)",message = "Địa chỉ phải đúng định dạng")
 	private String diaChi;
 	
 	@ManyToOne(fetch = FetchType.LAZY)

@@ -65,7 +65,9 @@ public class QuanLyNhanVienServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		String maNhanVien = request.getParameter("maNhanVien");
+		nhanVienDao.xoaNhanVien(maNhanVien);
+		 response.sendRedirect(request.getContextPath() + "/QuanLyNhanVienServlet");
 	}
 
 }
