@@ -22,12 +22,16 @@
     </style>
 </head>
 <body>
-    <form action="/BuiKhacThang_OnTapGK/QuanLyNhanVienServlet" method="get">
+    <form action="/BuiKhacThang_OnTapGK/QuanLyNhanVienServlet" method="GET">
         <label for="timTheoMa">Tìm nhân viên theo mã: </label>
         <input type="text" id="timTheoMa" name="maPhongBan" placeholder="Nhập mã phòng ban cần tìm">
         <input type="submit" value="TÌM"> 
+        
+        <div items="${tongNhanVien}">
+        	<h1>Tổng số nhân viên: ${tongNhanVien}</h1>
+        </div>
     </form>
-    
+
     <table class="table">
         <thead>
             <tr>
@@ -50,7 +54,8 @@
                     <td>${nhanvien.diaChi}</td>
                     <td>${nhanvien.phongBan.tenPhongBan}</td>
                     <td>
-                        <form action="/BuiKhacThang_OnTapGK/QuanLyNhanVienServlet" method="post" onsubmit="return CanhBao();">
+                        
+                        <form action="/BuiKhacThang_OnTapGK/QuanLyNhanVienServlet" method="POST" onsubmit="return CanhBao();">
                             <input type="hidden" name="maNhanVien" value="${nhanvien.maNhanVien}">
                             <input type="submit" value="XÓA">
                         </form>

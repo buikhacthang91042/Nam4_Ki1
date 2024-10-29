@@ -48,12 +48,20 @@ public class QuanLyNhanVienServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		String maPhongBan = request.getParameter("maPhongBan");
 		List<NhanVien> danhSachNhanVien;
-		
+		int count =0 ;
 		if(maPhongBan == null || maPhongBan.isEmpty()) {
 			danhSachNhanVien = nhanVienDao.findAll();
+			for (int i = 0; i < danhSachNhanVien.size(); i++) {
+				count++;
+			}
+			request.setAttribute("tongNhanVien", count);
 		}else {
 		
 			danhSachNhanVien = nhanVienDao.hienThiDSNhanVienTheoPhongBan(maPhongBan);
+			for (int i = 0; i < danhSachNhanVien.size(); i++) {
+				count++;
+			}
+			request.setAttribute("tongNhanVien", count);
 		}
 		request.setAttribute("danhSachNhanVien", danhSachNhanVien);
 		request.getRequestDispatcher("/DanhSachNhanVien.jsp").forward(request, response);

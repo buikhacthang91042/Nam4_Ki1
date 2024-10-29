@@ -17,7 +17,9 @@ import jakarta.validation.ValidatorFactory;
 import utils.EntityManagerFactoryUtil;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import dao.NhanVienDAO;
@@ -78,14 +80,19 @@ public class ThemNhanVienMoiServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		String maNhanVien = request.getParameter("maNhanVien");
 		String tenNhanVien = request.getParameter("tenNhanVien");
 		String tuoi = request.getParameter("tuoi");
 		String diaChi = request.getParameter("diaChi");
 		String sdt = request.getParameter("sdt");
 		String phongBan = request.getParameter("phongBan");
-		int Tuoi = Integer.parseInt(tuoi);
+		int Tuoi = 0;
+		Map<String, String> error = new HashMap<>();
+		if (tuoi == null || tuoi.trim().isEmpty()) {
+			error.put("tuoi", "Tuổi phải lớn hơn 18");
+		} else {
+			Tuoi = Integer.parseInt(tuoi);
+		}
 		NhanVien nv = new NhanVien();
 		nv.setMaNhanVien(maNhanVien);
 		nv.setTenNhanVien(tenNhanVien);
@@ -97,14 +104,22 @@ public class ThemNhanVienMoiServlet extends HttpServlet {
 		nv.setPhongBan(pb);
 
 		Set<ConstraintViolation<NhanVien>> dsLoi = validator.validate(nv);
-		if (!dsLoi.isEmpty()) {
-			for (ConstraintViolation<NhanVien> constraintViolation : dsLoi) {
-				StringBuilder loi = constraintViolation.getMessage();
-			}
-		} else {
-			nhanvienDAO.themNhanVienMoi(nv);
-			request.getRequestDispatcher("QuanLyNhanVienServlet").forward(request, response);
+		for (ConstraintViolation<NhanVien> constraintViolation : dsLoi) {
+			String tenTruong = constraintViolation.getPropertyPath().toString();
+			error.put(tenTruong, constraintViolation.getMessage());
 		}
+
+		if (!error.isEmpty()) {
+			request.setAttribute("error", error);
+			List<PhongBan> listPB = phongBanDAO.findAll();
+			request.setAttribute("listPhongBan", listPB);
+			request.getRequestDispatcher("/ThemNhanVienMoi.jsp").forward(request, response);
+			return;
+		}
+
+		nhanvienDAO.themNhanVienMoi(nv);
+		System.out.println(nv.getMaNhanVien());
+		response.sendRedirect(request.getContextPath() + "/QuanLyNhanVienServlet");
 
 	}
 

@@ -7,7 +7,9 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
@@ -20,14 +22,16 @@ public class NhanVien {
 	@NotEmpty(message = "Tên nhân viên không được để trống")
 	@Size(max = 50 ,message = "Không được nhập quá 50 kí tự")
 	private String tenNhanVien;
-	@NotEmpty(message = "Tuổi nhân viên không được để trống")
+	@Min(value = 18, message = "Tuổi phải lớn hơn 18")
 	private int tuoi;
 	@NotEmpty(message = "Số điện thoại nhân viên không được để trống")
 	private String sDT;
+	
 	@NotEmpty(message = "Địa chỉ nhân viên không được để trống")
 	@Pattern(regexp = "^[a-zA-Z0-9!#$&-+.]+@(gmail.com| yahoo.com| outlook.com)",message = "Địa chỉ phải đúng định dạng")
 	private String diaChi;
 	
+	@NotNull(message = "Phòng ban không được để trống")
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "maPhongBan", nullable = false)
 	private PhongBan phongBan;
