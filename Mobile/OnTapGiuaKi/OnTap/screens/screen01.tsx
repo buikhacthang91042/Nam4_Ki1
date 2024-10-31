@@ -1,8 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useNavigation } from '@react-navigation/native';
-import { StyleSheet, Text, View, Image, TouchableOpacity,TextInput} from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity,TextInput, Alert} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 export default function() {
+    const navigation = useNavigation();
+    const [email,setEmail] = useState('');
+    const [password,setPassword] = useState('');
+    const [showPass, setShowPass] = useState(false);
+    function handleLogin() {
+        const taiKhoan = "thang";
+        const mk = "123";
+        if((email == taiKhoan) && (password == mk) ){
+            navigation.navigate("Screen02");
+        }
+        else{
+            Alert.alert("Lỗi đăng nhập","Sai tài khoản hoặc mật khẩu ");
+        }
+    };
     return (
         <View style={style.container}>
             <View style={style.header}>
@@ -18,7 +32,8 @@ export default function() {
                     <TextInput
                     style={style.input}
                     placeholder='Enter your email'
-          
+                    value={email}
+                    onChangeText={setEmail}
                     />
                 </View>
                 <View style={style.content2}>
@@ -26,9 +41,14 @@ export default function() {
                     <TextInput
                     style={style.input}
                     placeholder='Enter your password'
-          
+                    value={password}
+                    onChangeText={setPassword}
+                    secureTextEntry={!showPass}
                     />
-                    <Icon name='eye' size={20} style={{marginLeft:120}}></Icon>
+                <TouchableOpacity onPress={() => setShowPass(!showPass)} style={style.eyeButton}>
+                    <Icon name='eye' size={20} ></Icon>
+                </TouchableOpacity>
+                
                 </View>
                 <View style={style.content3}>
                     <Text style={{color:"blue"}}>Forgot password?</Text>
@@ -36,7 +56,7 @@ export default function() {
                 </View>
             </View>
             <View style={style.button}>
-                <TouchableOpacity style={style.opacity}>
+                <TouchableOpacity style={style.opacity} onPress={handleLogin}>
                     <Text style={style.buttonContinue}>Continue</Text>
 
                 </TouchableOpacity>
@@ -143,13 +163,20 @@ const style = StyleSheet.create({
         opacity:0.2
       },
       iconContainer: {
-        width: 50, // Kích thước của vòng tròn
-        height: 50, // Kích thước của vòng tròn
-        borderRadius: 25, // Để tạo vòng tròn
+        width: 50, 
+        height: 50, 
+        borderRadius: 25, 
         borderWidth: 1,
         borderColor: 'black', // Màu viền của vòng tròn
         justifyContent: 'center',
         alignItems: 'center',
         marginHorizontal: 10, // Khoảng cách giữa các vòng tròn
     },
+    eyeButton: {
+        position: 'absolute', // Đặt vị trí tuyệt đối
+        right: 10, 
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    
 })
