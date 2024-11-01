@@ -71,9 +71,8 @@ export default function () {
     </View>
   );
   return (
-    
-      <View style={style.container}>
-        <ScrollView contentContainerStyle={style.scrollContainer}>
+    <View style={style.container}>
+      <ScrollView contentContainerStyle={style.scrollContainer}>
         <View style={style.header}>
           <View
             style={{
@@ -164,7 +163,7 @@ export default function () {
             keyExtractor={(item) => item.id.toString()}
           />
         </View>
-        <View style={{justifyContent:"center",alignItems:"center"}}>
+        <View style={{ justifyContent: "center", alignItems: "center" }}>
           <TouchableOpacity style={style.butonSeeAll}>
             <Text style={{ fontSize: 20, opacity: 0.5 }}>See all</Text>
           </TouchableOpacity>
@@ -173,30 +172,62 @@ export default function () {
           <FlatList
             data={bannerIMG}
             renderItem={({ item }) => (
-              <View style={{  marginHorizontal: 5, 
-                
-                alignItems: 'center',width:402, height: 200}}>
+              <View
+                style={{
+                  marginHorizontal: 5,
+
+                  alignItems: "center",
+                  width: 402,
+                  height: 200,
+                }}
+              >
                 <Image
                   source={{ uri: item.imageBanner }}
-                  style={{ width:"95%", height:150 ,borderRadius:10}}
+                  style={{ width: "95%", height: 150, borderRadius: 10 }}
                   resizeMode="cover"
                 />
               </View>
             )}
-            
             showsHorizontalScrollIndicator={false}
-            
             keyExtractor={(item) => item.id.toString()}
             pagingEnabled
             horizontal
           />
         </View>
-        </ScrollView>
-        <View style={style.footer}>
-
+      </ScrollView>
+      <View style={style.footer}>
+        <View style={style.viewFooter}>
+          <TouchableOpacity style={style.footerV}>
+            <Icon name="home" style={style.icon}></Icon>
+            <Text>Home</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={style.viewFooter}>
+          <TouchableOpacity style={style.footerV}>
+            <Icon name="search" style={style.icon}></Icon>
+            <Text>Search</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={style.viewFooter}>
+          <TouchableOpacity style={style.footerV}>
+            <Icon name="heart" style={style.icon}></Icon>
+            <Text>Favorite</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={style.viewFooter}>
+          <TouchableOpacity style={style.footerV}>
+            <Icon name="chatbox-ellipses-outline" style={style.icon}></Icon>
+            <Text>Inbox</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={style.viewFooter}>
+          <TouchableOpacity style={style.footerV}>
+            <Icon name="person-circle-outline" style={style.icon}></Icon>
+            <Text>Account</Text>
+          </TouchableOpacity>
         </View>
       </View>
-    
+    </View>
   );
 }
 const style = StyleSheet.create({
@@ -210,7 +241,7 @@ const style = StyleSheet.create({
   header: {
     flex: 1,
     flexDirection: "row",
-    height:50,
+    height: 50,
     justifyContent: "space-between",
   },
   categories: {
@@ -263,17 +294,20 @@ const style = StyleSheet.create({
   banner: {
     flex: 1,
     height: 150,
-   
+
     marginTop: 25,
   },
   footer: {
-    height:40,
-    backgroundColor:"yellow"
+    height: 60,
+    backgroundColor: "lightgrey",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    borderRadius: 16,
   },
   productItem: {
     flex: 1,
     flexDirection: "row",
-    padding:8,
+    padding: 8,
     borderWidth: 0.4,
     borderRadius: 15,
     width: "92.5%",
@@ -300,6 +334,17 @@ const style = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 2,
-    width:"93%"
+    width: "93%",
+  },
+  footerV: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  icon: {
+    fontSize: 20,
+  },
+  viewFooter: {
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
