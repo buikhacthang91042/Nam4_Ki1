@@ -18,6 +18,9 @@ export default function () {
   const [selectedCategory, setSelectedCategory] = useState("mobile");
   const [product, setProduct] = useState([]);
   const [bannerIMG, setBannerIMG] = useState([]);
+  const [seeAll, setSeeAll] = useState(false);
+  const [filter, setFilter] = useState();
+  const [search, setSearch] = useState("");
   useEffect(() => {
     async function fetchProduct() {
       try {
@@ -28,13 +31,14 @@ export default function () {
         const data = await response.json();
         console.log(data);
 
-        setProduct(data.slice(0, 4));
+        setProduct(data);
+        setFilter(seeAll ? data : data.slice(0, 4));
       } catch (error) {
         console.error("Failed to fetch products:", error);
       }
     }
     fetchProduct();
-  }, [selectedCategory, selectedChoice]);
+  }, [selectedCategory, selectedChoice, seeAll]);
 
   useEffect(() => {
     async function fetchBanner() {
@@ -52,11 +56,19 @@ export default function () {
     fetchBanner();
   }, []);
 
+  useEffect(() => {
+      const filter = product.filter(item => item.name.toLowerCase().includes(search.toLowerCase()));
+      setFilter(seeAll ? filter : filter.slice(0, 4));
+    }, [search, product, seeAll]);
+
   function handleChoicePress(choice) {
     setSelectedChoice(choice);
   }
   function handleCategoryPress(category) {
     setSelectedCategory(category);
+  }
+  function handleSeeAll() {
+    setSeeAll(!seeAll);
   }
 
   const renderProduct = ({ item }) => (
@@ -83,7 +95,11 @@ export default function () {
             }}
           >
             <Icon name="search" size={24}></Icon>
-            <TextInput placeholder="Search" style={{ marginLeft: 10 }} />
+            <TextInput placeholder="Search" style={{ marginLeft: 10 }} 
+            
+              value={search}
+              onChangeText={setSearch}
+            />
           </View>
           <View
             style={{
@@ -104,6 +120,7 @@ export default function () {
           <Text style={{ fontSize: 20, fontWeight: "bold" }}>Categories</Text>
           <TouchableOpacity
             style={{ flex: 0.2, flexDirection: "row", alignItems: "center" }}
+            
           >
             <Text style={{ opacity: 0.3 }}>See all</Text>
             <Icon name="chevron-forward"></Icon>
@@ -158,14 +175,18 @@ export default function () {
         </View>
         <View style={style.product}>
           <FlatList
-            data={product}
+            data={filter}
             renderItem={renderProduct}
             keyExtractor={(item) => item.id.toString()}
+            contentContainerStyle= {{padding:10}}
           />
         </View>
         <View style={{ justifyContent: "center", alignItems: "center" }}>
-          <TouchableOpacity style={style.butonSeeAll}>
-            <Text style={{ fontSize: 20, opacity: 0.5 }}>See all</Text>
+          <TouchableOpacity style={style.butonSeeAll} onPress={handleSeeAll}>
+            <Text style={{ fontSize: 20, opacity: 0.5 }}>
+              {seeAll ? "Not see all" : "See all"}
+              
+              </Text>
           </TouchableOpacity>
         </View>
         <View style={style.banner}>
@@ -265,7 +286,7 @@ const style = StyleSheet.create({
     marginHorizontal: 5,
   },
   choice: {
-    flex: 1,
+        flex: 1,
     flexDirection: "row",
     alignItems: "center",
     marginTop: 20,
@@ -288,8 +309,8 @@ const style = StyleSheet.create({
   },
   product: {
     marginTop: 20,
-    flex: 0,
-    height: 450,
+    flex: 1,
+    
   },
   banner: {
     flex: 1,
